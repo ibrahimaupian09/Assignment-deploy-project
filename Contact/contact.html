@@ -5,10 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
     <style>
-        form{
-            width: 20%;
+        *{
+            background-color: gray;
+            margin:0;
+            padding: 0;
         }
-        
+        div#link{
+            width: 60%;
+            margin-right: 10px;
+            float: right;
+            cursor: pointer;
+        }
+        div#link a{
+            padding-left: 150px;
+            color: rgb(63, 8, 134);
+            font-size: 1.3em;
+        }
+        h1{
+            font-size: 2em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 10px;
+        }
+        form{
+            width:25%;
+            margin-bottom: 5px;
+        }
+        form fieldset p{
+            color: rgb(137, 3, 3);
+        }
+        form fieldset input{
+            background-color: rgb(250, 237, 255);
+            margin-bottom: 5px;
+        }
+        form fieldset textarea{
+            background-color: rgb(250, 237, 255);
+        }
+        div#media-link{
+            width: 80%;
+            margin-top: 20px;
+        }
+        div#media-link a{
+            padding-left: 200px;
+        }
+        #btn{
+            box-sizing: border-box;
+            width: 80px;
+            height: 25px;
+            background-color: rgb(86, 77, 77);
+        }
     </style>
 </head>
 <body>
@@ -19,7 +63,30 @@
     </div>
     <div id="contact">
         <h1>Contact</h1>
-            <a href="https://github.com/ibrahimaupian09" target="_blank"><img src="../images/contact/icons8-github-100.png" alt="" width="40px" height="40px"></a>
+            <!-- <a href="https://github.com/ibrahimaupian09" target="_blank"><img src="../images/contact/icons8-github-100.png" alt="" width="40px" height="40px"></a>
+            
+            
+            <a href="https://www.linkedin.com/in/muhammad-ibrahim-7334aa2b1/" target="_blank"><img src="../images/contact/linkedinn.png" alt="" width="40px" height="40px"></a> 
+            
+            
+            <a href="mailto:ibrahimaupian09@gmail.com" target="_blank"><img src="../images/contact/email.png" alt="" width="40px" height="40px"></a>   
+            
+            
+            <a href="https://www.facebook.com/profile.php?id=100084670868250&mibextid=ZbWKwL" target="_blank"><img src="../images/contact/facebookk.png" alt="" width="40px" height="40px"></a> -->
+    </div>
+    <div id="form">
+        <form>
+            <fieldset>
+                <p>Name:</p><input type="text" placeholder="Full-name"  required maxlength="20"><br>
+                <p>E-mail:</p> <input type="email" required placeholder="abc@gmail.com" ><br>
+                <textarea name="Feedback" id="feed" cols="30" rows="10" color="white"
+                placeholder="Type your Feedback"></textarea><br>
+                <input type="submit" id="btn" >
+            </fieldset>
+        </form>
+    </div>
+    <div id="media-link">
+        <a href="https://github.com/ibrahimaupian09" target="_blank"><img src="../images/contact/icons8-github-100.png" alt="" width="40px" height="40px"></a>
             
             
             <a href="https://www.linkedin.com/in/muhammad-ibrahim-7334aa2b1/" target="_blank"><img src="../images/contact/linkedinn.png" alt="" width="40px" height="40px"></a> 
@@ -29,17 +96,6 @@
             
             
             <a href="https://www.facebook.com/profile.php?id=100084670868250&mibextid=ZbWKwL" target="_blank"><img src="../images/contact/facebookk.png" alt="" width="40px" height="40px"></a>
-    </div>
-    <div id="form">
-        <form>
-            <fieldset>
-                <legend>Feedback</legend>
-                Name:<input type="text" placeholder="Full-name" required maxlength="20"><br>
-                E-mail: <input type="email" required placeholder="abc@gmail.com"><br>
-                <textarea name="Feedback" id="" cols="30" rows="10" placeholder="Type your Feedback"></textarea><br>
-                <input type="submit" >
-            </fieldset>
-        </form>
     </div>
 </body>
 </html>
