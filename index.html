@@ -6,29 +6,9 @@
     <title>My Portfolio Website</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
-    <style>
-       /* #pic img{
-        border-radius: 140px;
-       }
-       #tab{
-        border: 1px solid black;
-        border-collapse: collapse;
-        text-align: center;
-        width: 100%;
-       }
-       .h{
-        border:1px solid black;
-        background-color: gray;       
-       }
-       .b{
-        border: 1px solid black;
-        background-color: rgb(166, 150, 150);
-       } */
-    </style>
 </head>
 <body>
     <!-- Navigation -->
-    <div id="container">
         <div id="nav">
             <a href="./Skill/skill.html">Skills</a>
             <a href="./Project/project.html">Projects</a>
@@ -38,30 +18,29 @@
         <!-- Home -->
         <!-- <h1>Home Page</h1> -->
         <div id="pic">
-            <img src="./images/profile/My-Picture.jpg" alt="My profile picture" width="150px" height="150px"> 
-            <h1><span>M</span>UHAMMAD <span>I</span>BRAHIM</h1>
+            <div>
+                 <img src="./images/profile/My-Picture.jpg" alt="My profile picture" width="150px" height="150px"> 
+            </div>
+                <span><h1 style="display:inline-block;"><span>M</span>UHAMMAD <span>I</span>BRAHIM</h1> <i class="fa fa-volume-up" onclick="document.getElementById('audio_player').play()"></i> </span>
+                <span><audio id="audio_player" src="./images/audio.opus" controls hidden></audio></span>
+            <!-- <h1><span>M</span>UHAMMAD <span>I</span>BRAHIM</h1> -->
         </div>
-        <!-- <div id="hello">
-            <p>HELLO,</p>
-            <p>MY NAME IS</p>
-            <span>IBRAHIM</span>
-        </div> -->
+        
         <div id="information">
-            <h3>My Information</h3>
+            <h3><span>M</span>y <span>I</span>nformation</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In harum dicta minus temporibus
                 fugit voluptatibus libero nihil voluptatem sapiente! Similique nihil sapiente alias est dolores consectetur suscipit corrupti illo numquam!</p>
             </div>
             <!-- Audio -->
-            <!-- <div>
-                <box-icon type='solid' name='user-voice'><audio src="./audio/surah_Ikhlas.mp3" controls></audio></box-icon>
-                 <audio src="./audio/surah_Ikhlas.mp3" controls><img src="./images/icon/speaker.png" alt=""></audio>
-            </div>  -->
+            <!-- <div id="audio-container">
+                <audio src="./images/audio.opus" controls></audio>
+
+            </div> -->
 
         <!-- Education Table -->
         <div id="Education">
-            <!-- <h2>Education</h2> -->
+            <h2><span>E</span>ducation</h2>
             <div id="table">
-            <center>
                 <table id="tab">
                         <thead id="head">
                             <!-- header row -->
@@ -108,17 +87,8 @@
                             </tr>
                         </tbody>
                     </table>
-                </center>
             </div>
         </div>
-    </div>
-     <!-- <script>
-        var audio = new Audio("./images/icon/speaker.png");
-
-        function playaudio(){
-            audio.play();
-        }
-        document.getElementById("speaker").addEventListener("click",playaudio);
-    </script> -->
+    
 </body>
 </html>
